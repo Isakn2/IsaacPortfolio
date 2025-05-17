@@ -27,7 +27,7 @@ const projects: Project[] = [
 			"Clerk Auth",
 			"C#",
 		],
-		image: "/images/Isaacforms.png",
+		image: "./images/Isaacforms.png",
 		liveUrl: "https://isaacforms-1.onrender.com/",
 		githubUrl: "https://github.com/Isakn2/IsaacForms",
 	},
@@ -37,7 +37,7 @@ const projects: Project[] = [
 		description:
 			"ASP.NET Core and SQL Server app for managing users, including registration, authentication, and admin panel.",
 		technologies: ["ASP.NET Core", "SQL Server", "C#", "Bootstrap"],
-		image: "/images/Screenshot 2025-05-14 at 22.30.09.png",
+		image: "./images/Screenshot 2025-05-14 at 22.30.09.png",
 		liveUrl: "http://usrmgt.somee.com/",
 		githubUrl: "https://github.com/Isakn2/UserMgt",
 	},
@@ -47,7 +47,7 @@ const projects: Project[] = [
 		description:
 			".NET web application for managing bookstore inventory.",
 		technologies: [".NET", "C#", "Entity Framework", "SQL"],
-		image: "/images/Booktester.png",
+		image: "./images/Booktester.png",
 		liveUrl: "https://bookstore-app-449h.onrender.com/",
 		githubUrl: "https://github.com/Isakn2/Bookstore_app/tree/main/BookStoreTester",
 	},
@@ -63,7 +63,7 @@ const projects: Project[] = [
 			"APIs",
 			"Data Visualization"
 		],
-		image: "/images/Weather1.png",
+		image: "./images/Weather1.png",
 		githubUrl: "https://github.com/Isakn2/python-api-challenge/blob/main/WeatherPy/WeatherPy.ipynb",
 	},
 	{
@@ -72,7 +72,7 @@ const projects: Project[] = [
 		description:
 			"In-depth analysis of global happiness data, uncovering factors influencing life satisfaction across different countries.",
 		technologies: ["Python", "Data Analysis", "Pandas", "Visualization"],
-		image: "/images/HappinessReport.png",
+		image: "./images/HappinessReport.png",
 		githubUrl: "https://github.com/Isakn2/Project_1",
 	},
 	{
@@ -81,7 +81,7 @@ const projects: Project[] = [
 		description:
 			"Developed web app integrating data visualization with HTML, CSS, and JavaScript.",
 		technologies: ["HTML", "CSS", "JavaScript", "D3.js"],
-		image: "/images/Spotify1.png",
+		image: "./images/Spotify1.png",
 		liveUrl: "https://soniamoretti.github.io/Final-Spotify-Challenge/",
 		githubUrl: "https://github.com/soniamoretti/Final-Spotify-Challenge",
 	},
@@ -91,7 +91,7 @@ const projects: Project[] = [
 		description:
 			"Interactive geospatial visualization using JavaScript and Leaflet.js to analyze geographic trends.",
 		technologies: ["JavaScript", "Leaflet.js", "GeoJSON", "HTML/CSS"],
-		image: "/images/Leaflet_Earthquake_map.png",
+		image: "./images/Leaflet_Earthquake_map.png",
 		liveUrl: "https://isakn2.github.io/leaflet-challenge/",
 		githubUrl: "https://github.com/Isakn2/leaflet-challenge",
 	},
@@ -101,7 +101,7 @@ const projects: Project[] = [
 		description:
 			"Designed Tableau dashboard analyzing bike-sharing data, highlighting usage patterns and station efficiency.",
 		technologies: ["Tableau", "Data Visualization", "Analytics"],
-		image: "/images/Tableau.png",
+		image: "./images/Tableau.png",
 		liveUrl: "https://public.tableau.com/app/profile/isaac.silva/viz/CityBike_Jersey_City/Story#1",
 	},
 	{
@@ -110,7 +110,7 @@ const projects: Project[] = [
 		description:
 			"Dynamic dashboard showcasing bacterial biodiversity using JavaScript, HTML, and CSS.",
 		technologies: ["JavaScript", "D3.js", "HTML/CSS", "Plotly.js"],
-		image: "/images/Bellybutton1.png",
+		image: "./images/Bellybutton1.png",
 		liveUrl: "https://isakn2.github.io/belly-button-challenge/",
 		githubUrl: "https://github.com/Isakn2/belly-button-challenge",
 	},
@@ -120,7 +120,7 @@ const projects: Project[] = [
 		description:
 			"Processed large datasets with Apache Spark to optimize query efficiency; created visualizations for real estate trends and pricing strategies.",
 		technologies: ["Apache Spark", "PySpark", "SQL", "Data Visualization"],
-		image: "images/Homesales.png",
+		image: "./images/Homesales.png",
 		githubUrl: "https://github.com/Isakn2/Home_Sales/blob/main/Home_Sales_colab.ipynb",
 	},
 ];
