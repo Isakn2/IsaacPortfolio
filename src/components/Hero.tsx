@@ -15,14 +15,15 @@ export default function Hero() {
                 Hi, I'm Isaac Silva
               </h1>
               <p className="text-muted-foreground md:text-xl">
-                Data Scientist & Machine Learning Engineer
+                Data Engineer | Data Analyst | Web Developer
               </p>
             </div>
             <p className="max-w-[600px] text-muted-foreground md:text-xl">
-              I specialize in building intelligent systems that transform complex
-              data into actionable insights. With expertise in machine learning,
-              statistical analysis, and data visualization, I help businesses make
-              data-driven decisions.
+            I specialize in developing intelligent systems that turn complex
+            data into clear, actionable insights. With strong expertise in
+            machine learning, statistical analysis, and data visualization,
+            I empower organizations to make informed, data-driven decisions
+            and uncover new opportunities for growth and efficiency.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild>
@@ -32,7 +33,7 @@ export default function Hero() {
                 </a>
               </Button>
               <Button variant="outline" asChild>
-                <a href="/resume.pdf" download>
+                <a href="/files/Isaac_Silva_Resume.pdf" download>
                   Download Resume{" "}
                   <Download className="ml-2 h-4 w-4" />
                 </a>
@@ -41,7 +42,7 @@ export default function Hero() {
             <div className="flex gap-4">
               <Button variant="ghost" size="icon" asChild>
                 <a
-                  href="https://github.com/isaacsilva"
+                  href="https://github.com/Isakn2"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
@@ -51,7 +52,7 @@ export default function Hero() {
               </Button>
               <Button variant="ghost" size="icon" asChild>
                 <a
-                  href="https://linkedin.com/in/isaacsilva"
+                  href="https://www.linkedin.com/in/isaac-silva-1052/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -72,7 +73,7 @@ export default function Hero() {
           <div className="flex items-center justify-center">
             <div className="relative aspect-square overflow-hidden rounded-full border-4 border-primary/20 shadow-xl">
               <img
-                src="/profile-photo.jpg"
+                src="/images/profileface.jpeg"
                 alt="Isaac Silva"
                 width={400}
                 height={400}

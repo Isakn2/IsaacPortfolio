@@ -72,10 +72,10 @@ export default function Contact() {
                     <h3 className="font-medium">Email</h3>
                     <p className="text-sm text-muted-foreground mt-1">
                       <a
-                        href="mailto:contact@isaacsilva.com"
+                        href="mailto:isak.silva81@gmail.com"
                         className="hover:text-primary"
                       >
-                        contact@isaacsilva.com
+                        isak.silva81@gmail.com
                       </a>
                     </p>
                   </div>
@@ -86,8 +86,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-medium">Phone</h3>
                     <p className="text-sm text-muted-foreground mt-1">
-                      <a href="tel:+15551234567" className="hover:text-primary">
-                        +1 (555) 123-4567
+                      <a href="tel:+529163163727" className="hover:text-primary">
+                        (+52) 984 316 3727
                       </a>
                     </p>
                   </div>
@@ -98,7 +98,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-medium">Location</h3>
                     <p className="text-sm text-muted-foreground mt-1">
-                      San Francisco, California
+                      Monterrey, MX
                     </p>
                   </div>
                 </div>

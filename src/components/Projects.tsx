@@ -13,50 +13,115 @@ type Project = {
 	githubUrl?: string;
 };
 
-// Sample project data
+// Actual project data with your links
 const projects: Project[] = [
 	{
 		id: 1,
-		title: "Machine Learning Customer Segmentation",
+		title: "IsaacForms Web-app",
 		description:
-			"Developed a customer segmentation model using K-means clustering algorithm to identify distinct customer groups based on purchasing behavior and demographics.",
+			"Custom form builder app using ASP.NET Core, Blazor, PostgreSQL, and Clerk; supports drag-drop UI, reusable templates, response analytics, and live deployment for survey/data collection use.",
 		technologies: [
-			"Python",
-			"Scikit-Learn",
-			"Pandas",
-			"Matplotlib",
-			"Seaborn",
+			"ASP.NET Core",
+			"Blazor",
+			"PostgreSQL",
+			"Clerk Auth",
+			"C#",
 		],
-		image: "/placeholder.svg",
-		githubUrl: "https://github.com/isaacsilva/customer-segmentation",
+		image: "/images/Isaacforms.png",
+		liveUrl: "https://isaacforms-1.onrender.com/",
+		githubUrl: "https://github.com/Isakn2/IsaacForms",
 	},
 	{
 		id: 2,
-		title: "Sales Prediction Dashboard",
+		title: "User Management Web-app",
 		description:
-			"Created an interactive dashboard for sales forecasting using time series analysis and machine learning models to predict future sales trends.",
-		technologies: ["Python", "Streamlit", "Prophet", "Pandas", "Plotly"],
-		image: "/placeholder.svg",
-		liveUrl: "https://sales-prediction-dashboard.herokuapp.com",
-		githubUrl: "https://github.com/isaacsilva/sales-prediction",
+			"ASP.NET Core and SQL Server app for managing users, including registration, authentication, and admin panel.",
+		technologies: ["ASP.NET Core", "SQL Server", "C#", "Bootstrap"],
+		image: "/images/Screenshot 2025-05-14 at 22.30.09.png",
+		liveUrl: "http://usrmgt.somee.com/",
+		githubUrl: "https://github.com/Isakn2/UserMgt",
 	},
 	{
 		id: 3,
-		title: "NLP Sentiment Analysis Tool",
+		title: "BookStoreTester",
 		description:
-			"Built a sentiment analysis tool that processes customer reviews and social media comments to determine sentiment polarity and key topics.",
-		technologies: ["Python", "NLTK", "SpaCy", "Transformers", "Flask"],
-		image: "/placeholder.svg",
-		githubUrl: "https://github.com/isaacsilva/sentiment-analysis",
+			".NET web application for managing bookstore inventory.",
+		technologies: [".NET", "C#", "Entity Framework", "SQL"],
+		image: "/images/Booktester.png",
+		liveUrl: "https://bookstore-app-449h.onrender.com/",
+		githubUrl: "https://github.com/Isakn2/Bookstore_app/tree/main/BookStoreTester",
 	},
 	{
 		id: 4,
-		title: "Computer Vision Object Detection",
+		title: "Weather Analysis Dashboard",
 		description:
-			"Implemented a real-time object detection system using deep learning models to identify and track objects in video streams.",
-		technologies: ["Python", "TensorFlow", "OpenCV", "YOLO", "Keras"],
-		image: "/placeholder.svg",
-		githubUrl: "https://github.com/isaacsilva/object-detection",
+			"Python-based weather analysis using APIs and data visualization to explore relationships between weather variables and latitude across global cities.",
+		technologies: [
+			"Python",
+			"Pandas",
+			"Matplotlib",
+			"APIs",
+			"Data Visualization"
+		],
+		image: "/images/Weather1.png",
+		githubUrl: "https://github.com/Isakn2/python-api-challenge/blob/main/WeatherPy/WeatherPy.ipynb",
+	},
+	{
+		id: 5,
+		title: "Happiness Report Analysis",
+		description:
+			"In-depth analysis of global happiness data, uncovering factors influencing life satisfaction across different countries.",
+		technologies: ["Python", "Data Analysis", "Pandas", "Visualization"],
+		image: "/images/HappinessReport.png",
+		githubUrl: "https://github.com/Isakn2/Project_1",
+	},
+	{
+		id: 6,
+		title: "Spotify Challenge",
+		description:
+			"Developed web app integrating data visualization with HTML, CSS, and JavaScript.",
+		technologies: ["HTML", "CSS", "JavaScript", "D3.js"],
+		image: "/images/Spotify1.png",
+		liveUrl: "https://soniamoretti.github.io/Final-Spotify-Challenge/",
+		githubUrl: "https://github.com/soniamoretti/Final-Spotify-Challenge",
+	},
+	{
+		id: 7,
+		title: "Leaflet Challenge",
+		description:
+			"Interactive geospatial visualization using JavaScript and Leaflet.js to analyze geographic trends.",
+		technologies: ["JavaScript", "Leaflet.js", "GeoJSON", "HTML/CSS"],
+		image: "/images/Leaflet_Earthquake_map.png",
+		liveUrl: "https://isakn2.github.io/leaflet-challenge/",
+		githubUrl: "https://github.com/Isakn2/leaflet-challenge",
+	},
+	{
+		id: 8,
+		title: "CityBike Tableau Dashboard",
+		description:
+			"Designed Tableau dashboard analyzing bike-sharing data, highlighting usage patterns and station efficiency.",
+		technologies: ["Tableau", "Data Visualization", "Analytics"],
+		image: "/images/Tableau.png",
+		liveUrl: "https://public.tableau.com/app/profile/isaac.silva/viz/CityBike_Jersey_City/Story#1",
+	},
+	{
+		id: 9,
+		title: "Belly Button Biodiversity",
+		description:
+			"Dynamic dashboard showcasing bacterial biodiversity using JavaScript, HTML, and CSS.",
+		technologies: ["JavaScript", "D3.js", "HTML/CSS", "Plotly.js"],
+		image: "/images/Bellybutton1.png",
+		liveUrl: "https://isakn2.github.io/belly-button-challenge/",
+		githubUrl: "https://github.com/Isakn2/belly-button-challenge",
+	},
+	{
+		id: 10,
+		title: "Home Sales Analysis",
+		description:
+			"Processed large datasets with Apache Spark to optimize query efficiency; created visualizations for real estate trends and pricing strategies.",
+		technologies: ["Apache Spark", "PySpark", "SQL", "Data Visualization"],
+		image: "images/Homesales.png",
+		githubUrl: "https://github.com/Isakn2/Home_Sales/blob/main/Home_Sales_colab.ipynb",
 	},
 ];
 

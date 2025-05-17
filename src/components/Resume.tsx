@@ -1,4 +1,4 @@
-import { Download } from "lucide-react";
+import { Download, ExternalLink, Github } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -9,112 +9,124 @@ import {
 } from "./ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
-// Sample resume data
-const experience = [
+// Resume-specific data
+const summary = `Results-oriented Data Analyst with expertise in Python, SQL, and JavaScript, recently self-constructed on .NET web apps. Proven ability to design, deploy, and interpret data-driven projects with a focus on machine learning, data visualization, and process optimization. Fluent in English, Spanish, and intermediate in Italian, with international work and academic experience. Adept at leveraging data insights to support business goals and improve operational efficiencies.`;
+
+const techSkills = [
   {
-    id: 1,
-    position: "Senior Data Analyst",
-    company: "TechCorp Analytics",
-    date: "2022 - Present",
-    description:
-      "Lead data analyst responsible for transforming complex datasets into actionable business insights. Developed automated reporting dashboards that improved decision-making efficiency by 30%.",
-    achievements: [
-      "Implemented predictive models that improved sales forecasting accuracy by 22%",
-      "Created interactive Tableau dashboards for executive stakeholders",
-      "Mentored junior analysts and led a team of 3 data specialists",
+    category: "Languages & Tools",
+    items: [
+      ".NET (C#, CSHTML)",
+      "Python (Pandas, NumPy, Flask, Scikit-learn, TensorFlow)",
+      "SQL (PostgreSQL, MySQL, SQLAlchemy, MongoDB, NoSQL)",
+      "JavaScript (D3.js, Leaflet.js)",
+      "HTML, CSS, VBA",
+      "Tableau, Excel, AWS (S3, EC2)",
+      "Flask, Shiny",
     ],
   },
   {
-    id: 2,
-    position: "Data Analyst",
-    company: "Digital Insights Inc.",
-    date: "2019 - 2022",
-    description:
-      "Analyzed customer behavior data and market trends to optimize marketing strategies and product development. Collaborated with cross-functional teams to implement data-driven solutions.",
-    achievements: [
-      "Built a customer segmentation model that increased conversion rates by 15%",
-      "Developed SQL queries and Python scripts to automate data cleaning processes",
-      "Created comprehensive reports that identified $1.2M in cost-saving opportunities",
+    category: "Platforms",
+    items: [
+      "GitHub",
+      "Jupyter Notebook",
+      "Google Colab",
+      "Tableau Public",
+      "Salesforce",
+      "SAP",
     ],
   },
   {
-    id: 3,
-    position: "Web Developer",
-    company: "Creative Web Solutions",
-    date: "2017 - 2019",
-    description:
-      "Designed and developed responsive websites and web applications for clients across various industries. Focused on creating intuitive user experiences with clean, efficient code.",
-    achievements: [
-      "Developed an e-commerce platform that increased client sales by 45%",
-      "Implemented SEO best practices that improved site traffic by 60%",
-      "Created and maintained documentation for 12+ client websites",
+    category: "Competencies",
+    items: [
+      "Data Cleaning",
+      "Predictive Modeling",
+      "Data Visualization",
+      "ETL Pipelines",
+      "KPI Analysis",
+      "Statistical Analysis",
     ],
+  },
+];
+
+const projects = [
+  {
+    title: "IsaacForms Web-app",
+    bullets: [
+      "Custom form builder app using ASP.NET Core, Blazor, PostgreSQL, and Clerk; supports drag-drop UI, reusable templates, response analytics, and live deployment for survey/data collection use.",
+    ],
+    liveUrl: "https://isaacforms-1.onrender.com/",
+    githubUrl: "https://github.com/Isakn2",
+  },
+  {
+    title: "User Management Web-app",
+    bullets: [
+      "ASP.NET Core and SQL Server app for managing users, including registration, authentication, and admin panel.",
+    ],
+    liveUrl: "http://usrmgt.somee.com/",
+    githubUrl: "https://github.com/Isakn2",
+  },
+  {
+    title: "BookStoreTester",
+    bullets: [".NET web application for managing bookstore inventory."],
+    liveUrl: "https://bookstore-app-449h.onrender.com/",
+    githubUrl: "https://github.com/Isakn2",
+  },
+  {
+    title: "Adult Income Classification",
+    bullets: [
+      "Built predictive model using XGBoost and neural networks; achieved 83% accuracy with optimized hyperparameters and data preprocessing techniques.",
+    ],
+    githubUrl: "https://github.com/elizromero/Project-4-adult-income",
+  },
+  {
+    title: "Home Sales Analysis",
+    bullets: [
+      "Processed large datasets with Apache Spark to optimize query efficiency; created visualizations for real estate trends and pricing strategies.",
+    ],
+    githubUrl: "https://github.com/Isakn2/Home_Sales",
+  },
+  {
+    title: "Spotify Challenge",
+    bullets: [
+      "Developed web app integrating data visualization with HTML, CSS, and JavaScript.",
+    ],
+    liveUrl: "https://soniamoretti.github.io/Final-Spotify-Challenge/",
+    githubUrl: "https://github.com/Isakn2",
+  },
+  {
+    title: "Leaflet Challenge",
+    bullets: [
+      "Interactive geospatial visualization using JavaScript and Leaflet.js to analyze geographic trends.",
+    ],
+    liveUrl: "https://isakn2.github.io/leaflet-challenge/",
+    githubUrl: "https://github.com/Isakn2/leaflet-challenge",
+  },
+  {
+    title: "CityBike Tableau Dashboard",
+    bullets: [
+      "Designed Tableau dashboard analyzing bike-sharing data, highlighting usage patterns and station efficiency.",
+    ],
+    liveUrl: "https://public.tableau.com/app/profile/isaac.silva/viz/CityBike_Jersey_City/Story#1",
+  },
+  {
+    title: "Belly Button Biodiversity",
+    bullets: [
+      "Dynamic dashboard showcasing bacterial biodiversity using JavaScript, HTML, and CSS.",
+    ],
+    liveUrl: "https://isakn2.github.io/belly-button-challenge/",
+    githubUrl: "https://github.com/Isakn2/belly-button-challenge",
   },
 ];
 
 const education = [
   {
-    id: 1,
-    degree: "Master of Science in Data Science",
-    institution: "University of Technology",
-    date: "2019 - 2021",
+    degree:
+      "B.S. Industrial Engineering with Minor in Systems Engineering",
+    institution: "Tecnológico de Monterrey",
+    date: "Aug 2011 – Dec 2016",
     description:
-      "Specialized in advanced statistical methods, machine learning, and data visualization. Graduated with honors.",
-    courses: [
-      "Advanced Machine Learning",
-      "Big Data Analytics",
-      "Statistical Modeling",
-      "Data Visualization",
-    ],
-  },
-  {
-    id: 2,
-    degree: "Bachelor of Science in Computer Science",
-    institution: "State University",
-    date: "2015 - 2019",
-    description:
-      "Focused on software development, algorithms, and database systems. Completed a capstone project on predictive analytics.",
-    courses: [
-      "Database Systems",
-      "Web Development",
-      "Algorithm Design",
-      "Software Engineering",
-    ],
-  },
-];
-
-const certifications = [
-  {
-    id: 1,
-    name: "Google Data Analytics Professional Certificate",
-    issuer: "Google",
-    date: "2022",
-    description:
-      "Comprehensive program covering the complete data analysis process using various tools and techniques.",
-  },
-  {
-    id: 2,
-    name: "Microsoft Certified: Azure Data Scientist Associate",
-    issuer: "Microsoft",
-    date: "2021",
-    description:
-      "Certification validating expertise in using Azure cloud services for implementing and running machine learning workloads.",
-  },
-  {
-    id: 3,
-    name: "Tableau Desktop Specialist",
-    issuer: "Tableau",
-    date: "2020",
-    description:
-      "Certification demonstrating proficiency in building visualizations, dashboards, and analyzing data with Tableau.",
-  },
-  {
-    id: 4,
-    name: "React Developer Certification",
-    issuer: "Meta",
-    date: "2020",
-    description:
-      "Comprehensive program covering React fundamentals, hooks, state management, and building responsive applications.",
+      "Graduated with honors (92/100); Excellence Performance Award (CENEVAL); International exchange at Reykjavik University (2014).",
   },
 ];
 
@@ -129,39 +141,74 @@ export default function Resume() {
           <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mt-4">
             My professional experience, education, and certifications.
           </p>
-          <Button className="mt-6" variant="outline">
-            <Download className="mr-2 h-4 w-4" /> Download Full Resume
+          <Button className="mt-6" variant="outline" asChild>
+            <a href="/files/Isaac_Silva_Resume.pdf" download>
+              <Download className="mr-2 h-4 w-4" /> Download Full Resume
+            </a>
           </Button>
         </div>
 
-        <Tabs defaultValue="experience" className="w-full max-w-4xl mx-auto">
-          <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
+        <Tabs defaultValue="summary" className="w-full max-w-4xl mx-auto">
+          <TabsList className="grid w-full grid-cols-4">
+            <TabsTrigger value="summary">Summary</TabsTrigger>
+            <TabsTrigger value="skills">Technical Skills</TabsTrigger>
+            <TabsTrigger value="projects">Projects</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="certifications">Certifications</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="experience" className="mt-6 space-y-6">
-            {experience.map((job) => (
-              <Card key={job.id}>
+          <TabsContent value="summary" className="mt-6">
+            <p className="text-lg leading-relaxed">{summary}</p>
+          </TabsContent>
+
+          <TabsContent value="skills" className="mt-6 space-y-6">
+            {techSkills.map((group) => (
+              <div key={group.category}>
+                <h3 className="font-semibold mb-2">{group.category}:</h3>
+                <ul className="list-disc pl-5">
+                  {group.items.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </TabsContent>
+
+          <TabsContent value="projects" className="mt-6 space-y-6">
+            {projects.map((proj, idx) => (
+              <Card key={idx}>
                 <CardHeader>
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
-                    <div>
-                      <CardTitle>{job.position}</CardTitle>
-                      <CardDescription className="text-base mt-1">
-                        {job.company}
-                      </CardDescription>
+                  <div className="flex justify-between items-center">
+                    <CardTitle>{proj.title}</CardTitle>
+                    <div className="flex gap-2">
+                      {proj.githubUrl && (
+                        <a
+                          href={proj.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-primary"
+                          aria-label="GitHub Repository"
+                        >
+                          <Github className="h-5 w-5" />
+                        </a>
+                      )}
+                      {proj.liveUrl && (
+                        <a
+                          href={proj.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-primary"
+                          aria-label="Live Demo"
+                        >
+                          <ExternalLink className="h-5 w-5" />
+                        </a>
+                      )}
                     </div>
-                    <span className="text-sm text-muted-foreground font-medium">
-                      {job.date}
-                    </span>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4">{job.description}</p>
                   <ul className="list-disc pl-5 space-y-1">
-                    {job.achievements.map((achievement, index) => (
-                      <li key={index}>{achievement}</li>
+                    {proj.bullets.map((b, i) => (
+                      <li key={i}>{b}</li>
                     ))}
                   </ul>
                 </CardContent>
@@ -171,64 +218,21 @@ export default function Resume() {
 
           <TabsContent value="education" className="mt-6 space-y-6">
             {education.map((edu) => (
-              <Card key={edu.id}>
+              <Card key={edu.degree}>
                 <CardHeader>
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
-                    <div>
-                      <CardTitle>{edu.degree}</CardTitle>
-                      <CardDescription className="text-base mt-1">
-                        {edu.institution}
-                      </CardDescription>
-                    </div>
-                    <span className="text-sm text-muted-foreground font-medium">
+                  <div className="flex justify-between items-center">
+                    <CardTitle>{edu.degree}</CardTitle>
+                    <span className="text-sm text-muted-foreground">
                       {edu.date}
                     </span>
                   </div>
+                  <CardDescription>{edu.institution}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-4">{edu.description}</p>
-                  <div className="mt-2">
-                    <strong className="text-sm font-medium">Key Courses:</strong>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {edu.courses.map((course, index) => (
-                        <span
-                          key={index}
-                          className="inline-flex items-center rounded-md bg-muted px-2 py-1 text-xs font-medium"
-                        >
-                          {course}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                  <p>{edu.description}</p>
                 </CardContent>
               </Card>
             ))}
-          </TabsContent>
-
-          <TabsContent value="certifications" className="mt-6">
-            <Card>
-              <CardContent className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {certifications.map((cert) => (
-                    <div
-                      key={cert.id}
-                      className="p-4 border rounded-lg hover:border-primary transition-colors"
-                    >
-                      <h3 className="font-medium">{cert.name}</h3>
-                      <div className="flex justify-between items-center mt-1">
-                        <span className="text-sm text-muted-foreground">
-                          {cert.issuer}
-                        </span>
-                        <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
-                          {cert.date}
-                        </span>
-                      </div>
-                      <p className="text-sm mt-2">{cert.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
           </TabsContent>
         </Tabs>
       </div>

@@ -31,6 +31,10 @@ export default function ProjectCard({ project }: ProjectProps) {
           src={project.image}
           alt={project.title}
           className="object-cover w-full h-full transition-transform hover:scale-105"
+          onError={(e) => {
+            // Fallback to placeholder if image doesn't exist
+            e.currentTarget.src = "/placeholder.svg";
+          }}
         />
       </div>
       <CardHeader>
@@ -56,7 +60,7 @@ export default function ProjectCard({ project }: ProjectProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Github className="h-4 w-4" />
+              <Github className="h-4 w-4 mr-2" />
               Code
             </a>
           </Button>
@@ -68,7 +72,7 @@ export default function ProjectCard({ project }: ProjectProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <ExternalLink className="h-4 w-4" />
+              <ExternalLink className="h-4 w-4 mr-2" />
               Live Demo
             </a>
           </Button>
