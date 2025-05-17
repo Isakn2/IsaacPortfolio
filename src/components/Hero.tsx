@@ -62,7 +62,7 @@ export default function Hero() {
               </Button>
               <Button variant="ghost" size="icon" asChild>
                 <a
-                  href="mailto:contact@isaacsilva.com"
+                  href="mailto:isak.silva81@gmail.com"
                   aria-label="Email"
                 >
                   <Mail className="h-5 w-5" />

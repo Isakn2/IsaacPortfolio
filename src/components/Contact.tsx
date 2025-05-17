@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -29,25 +30,57 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      // Initialize EmailJS with your public key
+      emailjs.init("vICcK52HKqXpbIToJ");
+      
+      // EmailJS configuration
+      const serviceId = "service_04k3uup";
+      const templateId = "template_9e3nlof"; // Your template ID from EmailJS
 
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        to_email: "isak.silva81@gmail.com", // Your email
+        subject: formData.subject,
+        message: formData.message,
+      };
 
-    // Show success message
-    toast({
-      title: "Message sent successfully!",
-      description: "Thank you for your message. I'll get back to you soon.",
-      type: "success",
-    });
+      const response = await emailjs.send(
+        serviceId,
+        templateId,
+        templateParams
+      );
 
-    setIsSubmitting(false);
+      if (response.status === 200) {
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+
+        // Show success message
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for your message. I'll get back to you soon.",
+          type: "success",
+        });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      console.error("Email sending error:", error);
+      toast({
+        title: "Message failed to send",
+        description:
+          "There was an error sending your message. Please try again later.",
+        type: "error",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
