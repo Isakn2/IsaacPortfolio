@@ -56,7 +56,7 @@ const projects = [
       "Custom form builder app using ASP.NET Core, Blazor, PostgreSQL, and Clerk; supports drag-drop UI, reusable templates, response analytics, and live deployment for survey/data collection use.",
     ],
     liveUrl: "https://isaacforms-1.onrender.com/",
-    githubUrl: "https://github.com/Isakn2",
+    githubUrl: "https://github.com/Isakn2/IsaacForms/tree/main/CustomFormsApp",
   },
   {
     title: "User Management Web-app",
@@ -64,13 +64,13 @@ const projects = [
       "ASP.NET Core and SQL Server app for managing users, including registration, authentication, and admin panel.",
     ],
     liveUrl: "http://usrmgt.somee.com/",
-    githubUrl: "https://github.com/Isakn2",
+    githubUrl: "https://github.com/Isakn2/UserMgt/tree/main/UserManagementApp",
   },
   {
     title: "BookStoreTester",
     bullets: [".NET web application for managing bookstore inventory."],
     liveUrl: "https://bookstore-app-449h.onrender.com/",
-    githubUrl: "https://github.com/Isakn2",
+    githubUrl: "https://github.com/Isakn2/Bookstore_app/tree/main/BookStoreTester",
   },
   {
     title: "Adult Income Classification",
@@ -92,7 +92,7 @@ const projects = [
       "Developed web app integrating data visualization with HTML, CSS, and JavaScript.",
     ],
     liveUrl: "https://soniamoretti.github.io/Final-Spotify-Challenge/",
-    githubUrl: "https://github.com/Isakn2",
+    githubUrl: "https://github.com/soniamoretti/Final-Spotify-Challenge/tree/main/Main_code",
   },
   {
     title: "Leaflet Challenge",

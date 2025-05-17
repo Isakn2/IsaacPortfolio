@@ -60,7 +60,7 @@ interface Skill {
 }
 
 export default function Skills() {
-	const [activeTab, setActiveTab] = useState("data");
+	const [, setActiveTab] = useState("data");
 
 	const skills: Skill[] = [
 		{ name: "JavaScript", icon: "📜" },

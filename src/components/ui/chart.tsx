@@ -1,5 +1,3 @@
-import React from "react"
-import { Bar, Line, Pie, Doughnut } from "react-chartjs-2"
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -12,7 +10,8 @@ import {
   Tooltip,
   Legend,
   ChartOptions,
-} from "chart.js"
+} from 'chart.js';
+import { Bar, Line, Pie, Doughnut } from 'react-chartjs-2';
 
 // Register ChartJS components
 ChartJS.register(
@@ -25,7 +24,7 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend
-)
+);
 
 interface ChartProps {
   type: "bar" | "line" | "pie" | "doughnut"
