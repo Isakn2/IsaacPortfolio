@@ -9,6 +9,7 @@ type Project = {
 	description: string;
 	technologies: string[];
 	image: string;
+	images?: string[];
 	liveUrl?: string;
 	githubUrl?: string;
 };
@@ -43,6 +44,23 @@ const projects: Project[] = [
 	},
 	{
 		id: 3,
+		title: "Target Stores Sales Analysis",
+		description:
+			"Designed an ETL pipeline for ingesting, processing, and analyzing store-related data. Implemented data transformation and visualization techniques to uncover sales trends and customer insights.",
+		technologies: [
+			"Python",
+			"Pandas",
+			"ETL",
+			"Data Visualization",
+			"SQL",
+			"Jupyter"
+		],
+		image: "./images/ecommerce1.png",
+		images: ["./images/ecommerce1.png", "./images/ecommerce2.png"],
+		githubUrl: "https://github.com/Isakn2/e-commerce-Target-/blob/main/Target_analysis.ipynb",
+	},
+	{
+		id: 4,
 		title: "BookStoreTester",
 		description:
 			".NET web application for managing bookstore inventory.",
@@ -52,7 +70,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/Bookstore_app/tree/main/BookStoreTester",
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Weather Analysis Dashboard",
 		description:
 			"Python-based weather analysis using APIs and data visualization to explore relationships between weather variables and latitude across global cities.",
@@ -67,7 +85,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/python-api-challenge/blob/main/WeatherPy/WeatherPy.ipynb",
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Happiness Report Analysis",
 		description:
 			"In-depth analysis of global happiness data, uncovering factors influencing life satisfaction across different countries.",
@@ -76,7 +94,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/Project_1",
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "Spotify Challenge",
 		description:
 			"Developed web app integrating data visualization with HTML, CSS, and JavaScript.",
@@ -86,7 +104,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/soniamoretti/Final-Spotify-Challenge",
 	},
 	{
-		id: 7,
+		id: 8,
 		title: "Leaflet Challenge",
 		description:
 			"Interactive geospatial visualization using JavaScript and Leaflet.js to analyze geographic trends.",
@@ -96,7 +114,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/leaflet-challenge",
 	},
 	{
-		id: 8,
+		id: 9,
 		title: "CityBike Tableau Dashboard",
 		description:
 			"Designed Tableau dashboard analyzing bike-sharing data, highlighting usage patterns and station efficiency.",
@@ -105,7 +123,7 @@ const projects: Project[] = [
 		liveUrl: "https://public.tableau.com/app/profile/isaac.silva/viz/CityBike_Jersey_City/Story#1",
 	},
 	{
-		id: 9,
+		id: 10,
 		title: "Belly Button Biodiversity",
 		description:
 			"Dynamic dashboard showcasing bacterial biodiversity using JavaScript, HTML, and CSS.",
@@ -115,7 +133,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/belly-button-challenge",
 	},
 	{
-		id: 10,
+		id: 11,
 		title: "Home Sales Analysis",
 		description:
 			"Processed large datasets with Apache Spark to optimize query efficiency; created visualizations for real estate trends and pricing strategies.",
