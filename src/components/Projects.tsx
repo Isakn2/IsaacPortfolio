@@ -32,6 +32,7 @@ const projects: Project[] = [
 		liveUrl: "https://isaacforms-1.onrender.com/",
 		githubUrl: "https://github.com/Isakn2/IsaacForms",
 	},
+	
 	{
 		id: 2,
 		title: "User Management Web-app",
@@ -44,6 +45,34 @@ const projects: Project[] = [
 	},
 	{
 		id: 3,
+		title: "KPI Forecasting Web Application",
+		description:
+			"A comprehensive web application designed for business analysts and non-technical users to forecast key performance indicators (KPIs) based on historical trends.",
+		technologies: [
+			"Python",
+			"Streamlit",
+			"Prophet",
+			"Machine Learning",
+			"Time Series Forecasting",
+			"Data Visualization",
+		],
+		image: "./images/KPI_forecasting1.png",
+		images: ["./images/KPI_forecasting1.png", "./images/KPI_forecasting2.png", "./images/KPI_forecasting3.png", "./images/KPI_forecasting4.png"],
+		liveUrl: "https://kpi-forecasting-app.onrender.com",
+		githubUrl: "https://github.com/Isakn2/kpi-forecasting-app",
+	},
+	{
+		id: 4,
+		title: "Spotify Challenge",
+		description:
+			"Developed web app integrating data visualization with HTML, CSS, and JavaScript.",
+		technologies: ["HTML", "CSS", "JavaScript", "D3.js"],
+		image: "./images/Spotify1.png",
+		liveUrl: "https://soniamoretti.github.io/Final-Spotify-Challenge/",
+		githubUrl: "https://github.com/soniamoretti/Final-Spotify-Challenge",
+	},
+	{
+		id: 5,
 		title: "Target Stores Sales Analysis",
 		description:
 			"Designed an ETL pipeline for ingesting, processing, and analyzing store-related data. Implemented data transformation and visualization techniques to uncover sales trends and customer insights.",
@@ -60,7 +89,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/e-commerce-Target-/blob/main/Target_analysis.ipynb",
 	},
 	{
-		id: 4,
+		id: 6,
 		title: "BookStoreTester",
 		description:
 			".NET web application for managing bookstore inventory.",
@@ -70,7 +99,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/Bookstore_app/tree/main/BookStoreTester",
 	},
 	{
-		id: 5,
+		id: 7,
 		title: "Weather Analysis Dashboard",
 		description:
 			"Python-based weather analysis using APIs and data visualization to explore relationships between weather variables and latitude across global cities.",
@@ -85,7 +114,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/python-api-challenge/blob/main/WeatherPy/WeatherPy.ipynb",
 	},
 	{
-		id: 6,
+		id: 8,
 		title: "Happiness Report Analysis",
 		description:
 			"In-depth analysis of global happiness data, uncovering factors influencing life satisfaction across different countries.",
@@ -94,17 +123,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/Project_1",
 	},
 	{
-		id: 7,
-		title: "Spotify Challenge",
-		description:
-			"Developed web app integrating data visualization with HTML, CSS, and JavaScript.",
-		technologies: ["HTML", "CSS", "JavaScript", "D3.js"],
-		image: "./images/Spotify1.png",
-		liveUrl: "https://soniamoretti.github.io/Final-Spotify-Challenge/",
-		githubUrl: "https://github.com/soniamoretti/Final-Spotify-Challenge",
-	},
-	{
-		id: 8,
+		id: 9,
 		title: "Leaflet Challenge",
 		description:
 			"Interactive geospatial visualization using JavaScript and Leaflet.js to analyze geographic trends.",
@@ -114,7 +133,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/leaflet-challenge",
 	},
 	{
-		id: 9,
+		id: 10,
 		title: "CityBike Tableau Dashboard",
 		description:
 			"Designed Tableau dashboard analyzing bike-sharing data, highlighting usage patterns and station efficiency.",
@@ -123,7 +142,7 @@ const projects: Project[] = [
 		liveUrl: "https://public.tableau.com/app/profile/isaac.silva/viz/CityBike_Jersey_City/Story#1",
 	},
 	{
-		id: 10,
+		id: 11,
 		title: "Belly Button Biodiversity",
 		description:
 			"Dynamic dashboard showcasing bacterial biodiversity using JavaScript, HTML, and CSS.",
@@ -133,7 +152,7 @@ const projects: Project[] = [
 		githubUrl: "https://github.com/Isakn2/belly-button-challenge",
 	},
 	{
-		id: 11,
+		id: 12,
 		title: "Home Sales Analysis",
 		description:
 			"Processed large datasets with Apache Spark to optimize query efficiency; created visualizations for real estate trends and pricing strategies.",
